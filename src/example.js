@@ -1,9 +1,7 @@
-"use strict";
-
 const name = "Freddy";
 typeof name === "strng";
 
-if (!("serviceWorker" in navigator)) {
+if (!"serviceWorker" in navigator) {
   // you have an old browser :-(
 }
 

@@ -6,9 +6,9 @@
       "jsx": true
     }
   },
+  "extends": ["eslint:recommended"],
   "rules": {
-    "strict": ["error", "never"],
-    "valid-typeof": "error"
+    "strict": ["error", "never"]
   },
   "env": {
     "browser": true

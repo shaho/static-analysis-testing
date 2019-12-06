@@ -6,12 +6,15 @@
   "author": "shaho <toofani@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "build": "babel src --out-dir dist"
+    "build": "babel src --out-dir dist",
+    "lint": "eslint --ignore-path .gitignore .",
+    "format": "prettier --ignore-path .gitignore --write \"**/*.+(js|json)\""
   },
   "devDependencies": {
     "@babel/cli": "^7.7.4",
     "@babel/core": "^7.7.4",
     "@babel/preset-env": "^7.7.4",
-    "eslint": "^6.7.2"
+    "eslint": "^6.7.2",
+    "prettier": "^1.19.1"
   }
 }
