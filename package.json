@@ -6,19 +6,22 @@
   "author": "shaho <toofani@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "build": "babel src --out-dir dist",
+    "build": "babel src --extensions .js,.ts,.tsx --out-dir dist",
     "lint": "eslint --ignore-path .gitignore .",
-    "prettier": "prettier --ignore-path .gitignore \"**/*.+(js|json)\"",
+    "check-types": "tsc",
+    "prettier": "prettier --ignore-path .gitignore --write \"**/*.+(js|json|ts|tsx)\"",
     "format": "yarn prettier --write",
     "check-format": "yarn prettier --list-different",
-    "validate": "yarn check-format && yarn lint && yarn build"
+    "validate": "yarn check-types && yarn check-format && yarn lint && yarn build"
   },
   "devDependencies": {
     "@babel/cli": "^7.7.4",
     "@babel/core": "^7.7.4",
     "@babel/preset-env": "^7.7.4",
+    "@babel/preset-typescript": "^7.7.4",
     "eslint": "^6.7.2",
     "eslint-config-prettier": "^6.7.0",
-    "prettier": "^1.19.1"
+    "prettier": "^1.19.1",
+    "typescript": "^3.7.3"
   }
 }
