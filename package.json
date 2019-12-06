@@ -1,0 +1,13 @@
+{
+  "name": "static-analysis-testing",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/shaho/static-analysis-testing.git",
+  "author": "shaho <toofani@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/cli": "^7.7.4",
+    "@babel/core": "^7.7.4",
+    "@babel/preset-env": "^7.7.4"
+  }
+}
