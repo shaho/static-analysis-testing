@@ -5,9 +5,13 @@
   "repository": "https://github.com/shaho/static-analysis-testing.git",
   "author": "shaho <toofani@gmail.com>",
   "license": "MIT",
+  "scripts": {
+    "build": "babel src --out-dir dist"
+  },
   "devDependencies": {
     "@babel/cli": "^7.7.4",
     "@babel/core": "^7.7.4",
-    "@babel/preset-env": "^7.7.4"
+    "@babel/preset-env": "^7.7.4",
+    "eslint": "^6.7.2"
   }
 }
